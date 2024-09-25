@@ -1,0 +1,9 @@
+services:
+  - type: docker
+    name: mysql-db
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    ports:
+      - port: 3306
